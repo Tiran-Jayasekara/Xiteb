@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from 'react';
+
+const LazyNavBar = lazy(() => import('./components/NavBar'));
+const LazyHeader = lazy(() => import('./components/Header'));
+const LazyDestinations = lazy(() => import('./pages/Destinations'));
+const LazyExperience = lazy(() => import('./pages/Experience'));
+const LazyOffers = lazy(() => import('./pages/Offers'));
+const LazyFooter = lazy(() => import('./components/Footer'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* Wrapping each lazy-loaded component with Suspense */}
+    <Suspense fallback={<div>Loading...</div>}>
+        <LazyNavBar />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyHeader />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyDestinations />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyExperience />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyOffers />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyFooter />
+      </Suspense>
+    </>
   );
 }
 
