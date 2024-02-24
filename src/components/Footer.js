@@ -7,6 +7,8 @@ const Footer = () => {
 
     return (
         <div className=' mx-4'>
+
+            {/* Top two images and scrollup Button */}
             <div className='relative flex mt-40'>
                 <img className='w-full' src='/assests/Footer/footer1.webp' alt='' />
                 <div className='absolute inset-0 md:-mt-72 -mt-20 flex items-center bg-opacity-50 text-black w-full'>
@@ -17,23 +19,24 @@ const Footer = () => {
                 </button>
             </div>
 
+
             <div className='relative  flex w-full mt-32'>
                 <div className='absolute inset-0 -mt-60 flex items-center bg-opacity-50 text-black w-full'>
                     <img className='absolute inset-0 items-end mt-[450px] w-full' style={{ zIndex: '1' }} src='/assests/Footer/footer3.webp' alt='' />
 
                     <div className='flex  flex-row md:mx-40 mx-4 font-sans text-xs z-10 md:mt-40 mt-10'>
+
+                        {/* First Information Row */}
                         <div className='flex absolute flex-col w-3/12'>
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm mt-0 text-customPurple text-left'>Corporate information</h2>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>Cinnamon Hotels & Resorts</p>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>John Keells Group</p>
-
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm text-customPurple text-left md:mt-14 mt-6'>Blogs</h2>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>Cinnamon Ublog</p>
-
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm text-customPurple text-left md:mt-14 mt-6'>Careers</h2>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>Careers</p>
-
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm text-customPurple text-left md:mt-14 mt-6'>Get Cinnamon in your inbox</h2>
+
                             <form className="md:max-w-sm w-60 ">
                                 <div className="relative mt-4">
                                     <input
@@ -53,11 +56,11 @@ const Footer = () => {
                                     <Checkbox {...label} defaultChecked className='' />
                                     <p id="helper-text-explanation" className="mt-2 md:text-sm text-[10px] text-gray-500 dark:text-gray-400"> By Checking this box, I consent to the processing of my Personal Data by Cinnamon for the purpose and within the Conditions set out in this form and the </p>
                                 </div>
-
-
                             </form>
                         </div>
 
+
+                        {/* Secound Information Row */}
                         <div className='flex absolute flex-col ml-4 w-3/12' style={{ left: '33%' }}>
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm text-customPurple text-left '>News and Awards</h2>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>News</p>
@@ -65,18 +68,17 @@ const Footer = () => {
 
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm text-customPurple text-left md:mt-14 mt-6'>Corporate Governance</h2>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>CSR</p>
-
                         </div>
 
+
+                        {/* Third Information Row */}
                         <div className='flex absolute flex-col ml-8 w-4/12' style={{ left: '55%' }}>
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm text-customPurple text-left '>Data Privacy & Security Policy</h2>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>Terms & Conditions</p>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>Privacy Statement</p>
-
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm text-customPurple text-left md:mt-14 mt-6'>Get In Touch</h2>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>info@cinnamonhotels.com</p>
                             <p className='md:text-xs text-[8px] text-gray-500 md:mt-4'>Hotel Contact Information</p>
-
                             <h2 className='font-bodoni-italic italic md:text-2xl text-sm text-customPurple text-left md:mt-14 mt-6'>Follow Us</h2>
                             <div className='mt-2'>
                                 <div className="flex justify-start text-gray-500">

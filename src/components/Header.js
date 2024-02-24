@@ -6,18 +6,21 @@ import {
 
 const Header = () => {
 
+  // Header Slide images
   const images = [
-    '/assests/hotel1.webp',
-    '/assests/hotel2.webp',
-    '/assests/hotel3.webp'
+    '/assests/hotel/hotel1.webp',
+    '/assests/hotel/hotel2.webp',
+    '/assests/hotel/hotel3.webp'
   ];
 
+  // Header image slider texts
   const text = [
     'Shangri-La Colombo',
     'Rooms & Sites',
     'Shang Place'
   ];
 
+  // Header image slider para
   const para = [
     'A personal tropical sanctuary set within the heart of the city',
     'A personal tropical sanctuary set within the heart of the city',

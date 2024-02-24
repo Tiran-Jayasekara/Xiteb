@@ -1,34 +1,25 @@
-import React, { lazy, Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
+import NavBar from './components/NavBar';
+import Header from "./components/Header";
+const Destinations = lazy(() => import('./pages/Destinations'));
+const Experience = lazy(() => import('./pages/Experience'));
+const Offers = lazy(() => import('./pages/Offers'));
+const Footer = lazy(() => import('./components/Footer'));
 
-const LazyNavBar = lazy(() => import('./components/NavBar'));
-const LazyHeader = lazy(() => import('./components/Header'));
-const LazyDestinations = lazy(() => import('./pages/Destinations'));
-const LazyExperience = lazy(() => import('./pages/Experience'));
-const LazyOffers = lazy(() => import('./pages/Offers'));
-const LazyFooter = lazy(() => import('./components/Footer'));
 
 function App() {
   return (
     <>
-    {/* Wrapping each lazy-loaded component with Suspense */}
-    <Suspense fallback={<div>Loading...</div>}>
-        <LazyNavBar />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <LazyHeader />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <LazyDestinations />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <LazyExperience />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <LazyOffers />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <LazyFooter />
-      </Suspense>
+      <NavBar />
+      <Header />
+
+      <Suspense fallback={<div>Loading...</div>}><Destinations /></Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}><Experience /></Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}><Offers /></Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}><Footer /></Suspense>
     </>
   );
 }

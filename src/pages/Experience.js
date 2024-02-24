@@ -13,7 +13,7 @@ const Experience = () => {
         <>
             {/* header and Descroption */}
             <div>
-                <h2 className="text-header font-sans md:text-3xl text-xl text-blue-900 md:ml-32 ml-4 font-extrabold backdrop-blur backdrop-opacity-75" data-testid="textBlockHeader">Save more, do more</h2>
+                <h2 className="text-header font-sans md:text-3xl text-xl text-blue-900 md:ml-32 ml-4 font-extrabold backdrop-blur backdrop-opacity-75" data-testid="textBlockHeader">Experience Something New</h2>
                 <p className='md:ml-32 mx-4 m-4 font-sans md:text-xl text-xs '>Choose from our exclusive offers, and get more from your next stay.</p>
             </div>
 
@@ -27,8 +27,8 @@ const Experience = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
                     <img
                         className="h-auto max-w-full rounded-none"
-                        src="/assests/hotel4.webp"
-                        alt=""
+                        src="/assests/hotel/hotel4.webp"
+                        alt="hotel4"
                     />
                     <div className="hidden  absolute inset-0 md:flex items-center justify-center bg-opacity-50 text-white p-4">
                         <h3 className="text-xl font-sans text-center uppercase font-semibold" style={{ transform: isHovered1 ? 'translateY(0)' : 'translateY(100px)', transition: 'transform 0.3s ease' }}>Advance Purchase Discount – save up to 17%</h3>
@@ -43,8 +43,8 @@ const Experience = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
                     <img
                         className="h-auto max-w-full rounded-none"
-                        src="/assests/hotel5.webp"
-                        alt=""
+                        src="/assests/hotel/hotel5.webp"
+                        alt="hotel5"
                     />
                     <div className="absolute inset-0 md:flex hidden items-center justify-center bg-opacity-50 text-white p-4">
                         <h3 className="text-xl font-sans text-center uppercase font-semibold" style={{ transform: isHovered2 ? 'translateY(0)' : 'translateY(100px)', transition: 'transform 0.3s ease' }}>Multiply Your Points</h3>
@@ -60,8 +60,8 @@ const Experience = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
                     <img
                         className="h-auto max-w-full rounded-none"
-                        src="/assests/hotel6.webp"
-                        alt=""
+                        src="/assests/hotel/hotel6.webp"
+                        alt="hotel6"
                     />
                     <div className="absolute inset-0 md:flex hidden items-center justify-center bg-opacity-50 text-white p-4">
                         <h3 className="text-xl font-sans text-center uppercase font-semibold" style={{ transform: isHovered3 ? 'translateY(0)' : 'translateY(100px)', transition: 'transform 0.3s ease' }}>Free Bonus Points at new hotels</h3>
@@ -77,8 +77,8 @@ const Experience = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
                     <img
                         className="h-auto max-w-full rounded-none"
-                        src="/assests/hotel7.webp"
-                        alt=""
+                        src="/assests/hotel/hotel7.webp"
+                        alt="hotel7"
                     />
                     <div className="absolute inset-0 md:flex hidden items-center justify-center bg-opacity-50 text-white p-4">
                         <h3 className="text-xl font-sans text-center uppercase font-semibold" style={{ transform: isHovered4 ? 'translateY(0)' : 'translateY(100px)', transition: 'transform 0.3s ease' }}>Park & Stay</h3>
@@ -95,8 +95,8 @@ const Experience = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
                     <img
                         className="h-auto max-w-full rounded-none"
-                        src="/assests/hotel8.webp"
-                        alt=""
+                        src="/assests/hotel/hotel8.webp"
+                        alt="hotel8"
                     />
                     <div className="absolute inset-0 md:flex hidden items-center justify-center bg-opacity-50 text-white p-4">
                         <h3 className="text-xl font-sans text-center uppercase font-semibold" style={{ transform: isHovered5 ? 'translateY(0)' : 'translateY(100px)', transition: 'transform 0.3s ease' }}>Experience the Stay</h3>
@@ -112,8 +112,8 @@ const Experience = () => {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
                     <img
                         className="h-auto max-w-full rounded-none"
-                        src="/assests/hotel9.webp"
-                        alt=""
+                        src="/assests/hotel/hotel9.webp"
+                        alt="hotel9"
                     />
                     <div className="absolute inset-0 md:flex hidden items-center justify-center bg-opacity-50 text-white p-4">
                         <h3 className="text-xl font-sans text-center uppercase font-semibold" style={{ transform: isHovered6 ? 'translateY(0)' : 'translateY(100px)', transition: 'transform 0.3s ease' }}>Breakfast Included Package</h3>
